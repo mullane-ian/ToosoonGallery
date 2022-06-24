@@ -1,0 +1,216 @@
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next,
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+
+}
+
+.canvas-container{
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  overscroll-behavior: none;
+  background: #ffffff;
+  font-family: "Inter var", sans-serif;
+  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iYmxhY2siLz48L3N2Zz4="),
+    auto;
+}
+
+.background-video{
+  position: absolute;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+h1 {
+  font-size: 30vw;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.7em;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+a {
+  pointer-events: all;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+p#title {
+  position: absolute;
+  top: 1vw;
+  left: 2vw;
+  z-index: 20;
+  margin: 0;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 1vw;
+  right: 2vw;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a {
+  transition: transform 200ms ease-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.loader-div {
+  width: 100%;
+}
+
+.scroll-container{
+  height: 100vh;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu-container{
+  margin: 10px 10px 10px 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: vw;
+  height: 90vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.391);
+
+-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+}
+
+.frame {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0);
+  margin: auto;
+  text-align: center;
+  border: 1px solid transparent;
+  /* -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+  /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+  /* background-size: cover; */
+  border-radius: 3px;
+  top: -100rem !important;
+  z-index: 1;
+}
+.hide{
+  display: none;
+}
+
+img {
+
+ 
+  height: 600px;
+  width: 650px;
+  text-align: center;
+  margin-top: -100px;
+}
+.frame1 {
+  margin-bottom: -200px;
+  text-align: center;
+  z-index: 10;
+
+}
+.button {
+text-align: middle;
+margin-top: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 80px;
+padding-right: 80px;
+background-color: transparent;
+-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #e6d8df 0px 0px 20px, #111011 0px 0px 30px, #e8dfe3 0px 0px 40px, #1b191a 0px 0px 50px, #201319 0px 0px 75px;
+border: 3px double #efe8eb;
+border-radius: 3px;
+color: #000000;
+font-family: 'Luckiest Guy', cursive;
+font-size: 16px;
+}
+.button:hover{
+  cursor: pointer;
+}
+.btn-group {
+
+  margin-top: 40px;
+}
+
+
+.progress{
+  background: transparent;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  z-index: 1000000000;
+
+}
+
+.progress-value{
+  animation: load 5s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg,#eec0c6 0%, #7ee8fa 74%);
+  height: 30px;
+  width: 0px;
+}
+.load-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.959);
+
+  width: 100vw;
+  height: 100vh;
+  animation: fade 3s ;
+  animation-delay: 7s;
+
+}
+
+@keyframes load {
+  0% { width: 0; }
+  90% { width: 100%; }
+
+  100% { width: 0%; }
+}
+
+
+@keyframes fade {
+  0% {   background: rgba(255, 255, 255, 0.959);}
+  100% {   background: rgba(255, 255, 255, 0);}
+
+}
